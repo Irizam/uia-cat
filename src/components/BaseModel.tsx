@@ -16,7 +16,7 @@ const BaseModel: FC<ModelProps> = ({ modelPath, scale, rotation, position }) => 
     const { actions, names } = useAnimations(animations, scene);
     const { controls, camera } = useThree();
     // --- Audio Setup ---
-    const AUDIO_URL = '/sounds/oia.mp3';
+    const AUDIO_URL = './sounds/oia.mp3';
     const listener = useRef(new THREE.AudioListener()).current;
     const soundBuffer = useLoader(THREE.AudioLoader, AUDIO_URL);
     const soundRef = useRef<THREE.PositionalAudio | null>(null);

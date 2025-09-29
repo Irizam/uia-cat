@@ -7,7 +7,7 @@ const LazyModelController = lazy(() => import('./components/ModelController'));
 import CameraUpdater from './components/CameraUpdater';
 
 export default function App() {
-  const USER_MODEL_URL = '/models/oiiaioooooiai_cat.glb';
+  const USER_MODEL_URL = './models/oiiaioooooiai_cat.glb';
   const MOBILE_WIDTH_THRESHOLD = 640;
   // --- State for Model/Camera ---
   const [modelScale, setModelScale] = useState<number[]>([10, 10, 10]);
